@@ -22,6 +22,7 @@ if numero < 10000000:
     abaco = [0] * 7
     rec = 6
     abacoDib = [""] * 7
+    number = ""
 
     for i in range(len(numero)-1, -1, -1):
         #print(numero[i])
@@ -42,3 +43,17 @@ if numero < 10000000:
 
     for i in range(7):
         print(abacoDib[i])
+        number += str(len(abacoDib[i].split("---")[0]))
+
+    number = int(number)
+    number = str(number)
+    if len(number) > 3:
+        number = number[::-1]
+        number = number[:3] + "." + number[3:]
+        number = number[::-1]
+        if len(number) > 6:
+            number = number[0] + "." + number[1:]
+    print(number)
+
+
+    
