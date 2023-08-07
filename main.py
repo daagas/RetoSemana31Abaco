@@ -35,10 +35,10 @@ if numero < 10000000:
             for j in range(abaco[i]):
                 abacoDib[i] += "0"
             abacoDib[i] += "---"
-            for j in range(8-abaco[i]):
+            for j in range(9-abaco[i]):
                 abacoDib[i] += "0"
         else:
-            abacoDib[i] = "---00000000"
+            abacoDib[i] = "---000000000"
 
     for i in range(7):
         print(abacoDib[i])
